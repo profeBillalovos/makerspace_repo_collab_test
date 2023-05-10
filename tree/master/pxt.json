@@ -1,0 +1,24 @@
+{
+    "name": "makerspace_repo_collab_test-tree-master",
+    "dependencies": {
+        "device": "*",
+        "makerspace_repo_collab_test": "github:villaperros/makerspace_repo_collab_test"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.12.30",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "tsprj"
+}
