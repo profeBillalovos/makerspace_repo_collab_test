@@ -1,3 +1,7 @@
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    music.play(music.createSong(hex`00780004080200`), music.PlaybackMode.UntilDone)
+})
+let mySprite3: Sprite = null
 let mySprite2: Sprite = null
 let mySprite = sprites.create(img`
     . . . . . . . 7 7 . . 7 7 . . . 
@@ -141,6 +145,7 @@ scene.setBackgroundImage(img`
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     `)
+game.splash("snsnajdncoaNC")
 game.onUpdateInterval(100, function () {
     if (true) {
         mySprite2 = sprites.create(img`
@@ -163,6 +168,23 @@ game.onUpdateInterval(100, function () {
             `, SpriteKind.Player)
         mySprite2.setPosition(randint(0, 160), randint(0, 120))
     } else {
-    	
+        mySprite3 = sprites.create(img`
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            `, SpriteKind.Player)
     }
 })
